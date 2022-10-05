@@ -158,8 +158,6 @@ for i in range(len(gen_images)):
 	mse = mean_squared_error(gen_images[i], tar_images[i])
 	print("Mean squared error: {}".format(mse))
 
-#sum of squared?
-
 # Dice similarity function
 # https://www.codegrepper.com/code-examples/python/code+to+calculate+dice+score
 def single_dice_coef(y_true, y_pred_bin):
@@ -221,36 +219,3 @@ def single_dice_coef(y_true, y_pred_bin):
 for i in range(len(gen_cropped)):
 	dice_score = single_dice_coef(tar_cropped[i], gen_cropped[i])
 	print ("Dice Similarity: {}".format(dice_score))
-#%% Load test video
-
-# load an image
-def load_image(filename, size=(256,256)):
-	# load image with the preferred size
-	pixels = load_img(filename, target_size=size)
-	# convert to numpy array
-	pixels = img_to_array(pixels)
-	# scale from [0,255] to [-1,1]
-	pixels = (pixels - 127.5) / 127.5
-	# reshape to 1 sample
-	pixels = expand_dims(pixels, 0)
-	return pixels
-
-
-#for file in os.listdir("I:/Onderzoek/Sabien Heisterkamp/Tharanghi-PedLUS/Data_per_score/testvideo/"):
-#	if file.endswith(".avi"):
-#		path = os.path.join("I:/Onderzoek/Sabien Heisterkamp/Tharanghi-PedLUS/Data_per_score/testvideo/", file)
-#		vidcap = cv2.VideoCapture(path)
-#		success,image = vidcap.read()
-#		count = 0
-#		model = load_model('C:/Netwerken/FromScratch/Image_segmentation/SavedModels/model_008000.h5')
-#		while success:
-#			name = "I:/Onderzoek/Sabien Heisterkamp/Tharanghi-PedLUS/Data_per_score/testvideo/savedpredictions/" + str(count) + ".jpg"
-#			cv2.imwrite(name, image)  # save frame as JPEG file
-#			success, image = vidcap.read()
-#			src_image = load_image(name)
-#			gen_image = model.predict(src_image)
-#			gen_image = (gen_image + 1) / 2.0
-#			plt.imshow(gen_image[0])
-#			plt.axis('off')
-#			plt.show()
-#			count += 6
