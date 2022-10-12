@@ -1,6 +1,5 @@
 """ Training script for LUS videos
-Tutorial from https://keras.io/examples/vision/video_classification/
-Tharanghi Logendran, tharanghi@gmail.com"""
+Tutorial from https://keras.io/examples/vision/video_classification/"""
 
 from tensorflow import keras
 from keras.datasets import mnist
