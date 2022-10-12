@@ -1,7 +1,6 @@
 """ Training script for classification based on segmented pixel count
 Tutorial from https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
-https://www.datacamp.com/tutorial/understanding-logistic-regression-python
-Tharanghi Logendran, tharanghi@gmail.com"""
+https://www.datacamp.com/tutorial/understanding-logistic-regression-python"""
 
 import sklearn
 from sklearn.datasets import load_iris
