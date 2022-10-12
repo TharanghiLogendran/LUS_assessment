@@ -1,5 +1,4 @@
 """"Convert videos to frames for segmentation and make random selection"""""
-""""Tharanghi Logendran, tharanghi@gmail.com"""
 
 import cv2
 import os, random, shutil
