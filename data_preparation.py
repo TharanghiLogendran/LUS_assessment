@@ -1,5 +1,4 @@
-""" Prepare input data to feed to the segmentation model
-Tharanghi Logendran, tharanghi@gmail.com"""
+""" Prepare input data to feed to the segmentation model"""
 
 from matplotlib import pyplot as plt
 import os
