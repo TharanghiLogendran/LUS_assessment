@@ -1,6 +1,5 @@
 # Source: https://github.com/philferriere/cocoapi
-# Run in terminal. Example command line: python C:/Netwerken/FromScratch/Video-Augmentation-Code-main/
-# video_augmentation_code.py --main-folder "I:/Onderzoek/Sabien Heisterkamp/Tharanghi-PedLUS/Data_per_score/" --output-folder "I:/Onderzoek/Sabien Heisterkamp/Tharanghi-PedLUS/Data_per_score/Sessie_3/" --max-clips 4
+
 
 import cv2
 import os
