@@ -1,6 +1,5 @@
 """ Testing script for LUS videos
-Tutorial from https://keras.io/examples/vision/video_classification/
-Tharanghi Logendran, tharanghi@gmail.com"""
+Tutorial from https://keras.io/examples/vision/video_classification/"""
 
 from tensorflow import keras
 from tensorflow_docs.vis import embed
