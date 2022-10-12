@@ -1,5 +1,4 @@
-""" Plot data distribution figures
-Tharanghi Logendran, tharanghi@gmail.com"""
+""" Plot data distribution figures"""
 
 import matplotlib.pyplot as plt
 import pandas as pd
