@@ -1,5 +1,4 @@
-""" Split data in train and test data
-Tharanghi Logendran, tharanghi@gmail.com"""
+""" Split data in train and test data"""
 
 import random
 
